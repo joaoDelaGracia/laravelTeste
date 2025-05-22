@@ -7,7 +7,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 Route::get('/series', [SeriesController::class, 'index']);
 Route::get('/series/criar', [SeriesController::class, 'create']);
-
+=======
 
