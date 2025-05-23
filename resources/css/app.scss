@@ -1,0 +1,14 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+@import 'bootstrap/scss/bootstrap';
+
+// Tailwind não reconhece diretivas como @source ou @theme dentro de SCSS.
+// Elas devem ir na configuração do Tailwind (`tailwind.config.js`), não no .scss.
+
+// Fontes personalizadas com Tailwind podem ser definidas no tailwind.config.js também,
+// mas se quiser adicionar diretamente no SCSS, pode fazer isso assim:
+:root {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
