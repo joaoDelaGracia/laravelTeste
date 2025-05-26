@@ -9,7 +9,7 @@ class SeriesController extends Controller
 {
     public function index(){
 
-        $series = Serie::query()->orderBy('nome')->get();
+        $series = Serie::query(();
 
         return view('series.index', compact('series'));
 

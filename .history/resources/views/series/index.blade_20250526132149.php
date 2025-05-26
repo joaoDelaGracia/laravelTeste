@@ -1,5 +1,5 @@
 <x-layout title="Séries">
-    <a class="btn btn-dark mb-3" href="/series/criar">Adicionar</a>
+    <a class="btn btn-dark" href="/series/criar">Adicionar</a>
 
     <ul class="list-group">
         @foreach ($series as $serie)

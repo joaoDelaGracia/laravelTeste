@@ -9,6 +9,7 @@
 <body>
     <div class="container">
         <h1 class="">{{ $title }} </h1>
+        <button class="btn btn-primary">Teste</button>
         {{ $slot }}
     </div>
 </body>
