@@ -1,0 +1,34 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Serie;
+use Illuminate\Http\Request;
+
+class SeriesController extends Controller
+{
+    public function index(){
+
+        // $series = Serie::query()->orderBy('nome')->get();
+        $series = Series::all();
+
+        return view('series.index', compact('series'));
+
+    }
+
+    public function create(Request $request){
+        return view("series.create");
+    }
+
+
+    public function store(Request $request){
+
+        $nomeSerie = $request->input("nome");
+        $serie = new Serie();
+        $serie->nome = $nomeSerie;
+        $serie->save();
+
+        return redirect('/series');
+    }
+
+}

@@ -7,5 +7,6 @@
             <input type="text" id="nome" name="nome" class="form-control">
         </div>
         <button type="submit" class="btn btn-primary">Adicionar</button>
+>>>>>>> ca29d7cbf21624a7bf8fc43471d86a007f2726c1
     </form>
 </x-layout>

@@ -3,7 +3,7 @@
     <a class="btn btn-dark mb-3" href="{{ route('series.create') }}">Adicionar</a>
 
     @isset($mensagemSucesso)
-    <div class="alert alert-success">
+    <div class="alert alert-sucess">
         {{ $mensagemSucesso }}
     </div>
     @endisset

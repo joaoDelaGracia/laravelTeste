@@ -35,7 +35,7 @@ class SeriesController extends Controller
 
     public function destroy(Request $request){
         Serie::destroy($request->series);
-        $request->session()->flash("mensagem.sucesso", "Série removida com sucesso !");
+        $request->session()->flash("mensagem.sucesso", "Série removida com sucesso ");
 
         return to_route('series.index');
     }

@@ -2,11 +2,7 @@
 
     <a class="btn btn-dark mb-3" href="{{ route('series.create') }}">Adicionar</a>
 
-    @isset($mensagemSucesso)
-    <div class="alert alert-success">
-        {{ $mensagemSucesso }}
-    </div>
-    @endisset
+    div.alert.alert-s
 
     <ul class="list-group">
         @foreach ($series as $serie)

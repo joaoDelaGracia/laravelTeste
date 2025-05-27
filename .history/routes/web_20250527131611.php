@@ -9,5 +9,6 @@ Route::get('/', function () {
 });
 
 Route::resource("/series", SeriesController::class)
-    ->only(["index", "create", "store", "destroy"]);
+    ->only(["index", "create", "store"]);
 
+Route::post("/series/", [SeriesController::class,""])->name("");
