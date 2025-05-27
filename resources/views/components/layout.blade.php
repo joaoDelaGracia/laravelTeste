@@ -7,8 +7,9 @@
     @vite(['resources/css/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-    <h1 class="">{{ $title }} </h1>
-    <button class="btn btn-primary">Teste</button>
-{{ $slot }}
+    <div class="container">
+        <h1 class="">{{ $title }} </h1>
+        {{ $slot }}
+    </div>
 </body>
 </html>
