@@ -9,5 +9,5 @@ Route::get('/', function () {
 });
 
 Route::resource("/series", SeriesController::class)
-    ->except("show");
+    ->only(["index", "create", "store", "destroy", "edit"]);
 
