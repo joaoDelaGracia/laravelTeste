@@ -10,4 +10,3 @@ interface SeriesRepository
     public function add(SeriesFormRequest $request): Series;
 }
 
-?>
