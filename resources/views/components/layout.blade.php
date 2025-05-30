@@ -7,8 +7,15 @@
     @vite(['resources/css/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-    <div class="container">
-        <h1 class="">{{ $title }} </h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ route("series.index") }}">Home</a>
+
+            <a href="{{ route("logout") }}">Sair</a>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <h1>{{ $title }} </h1>
 
         @isset($mensagemSucesso)
         <div class="alert alert-success">
