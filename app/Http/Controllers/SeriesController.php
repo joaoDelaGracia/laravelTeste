@@ -9,12 +9,13 @@ use App\Models\Series;
 use App\Repositories\SeriesRepository;
 use Illuminate\Http\Request;
 
-
 class SeriesController extends Controller
 {
 
-    public function __construct(private SeriesRepository $repository){
 
+    public function __construct(private SeriesRepository $repository){
+        /** @noinspection PhpUndefinedMethodInspection */
+        $this->middleware('auth')->only('edit');
     }
 
     public function index(Request $request){
