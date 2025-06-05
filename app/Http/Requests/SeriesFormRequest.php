@@ -3,6 +3,7 @@
 /**
  * @property int $seasonsQty
  * @property int $episodesPerSeason
+ * @property string $coverPath
  * @method array all(array $keys = null)
  */
 

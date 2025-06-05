@@ -27,7 +27,7 @@ class SeriesController extends Controller
 
         $mensagemSucesso = $request->session()->get("mensagem.sucesso");
 
-        return view('series.index')->with('series', $series) 
+        return view('series.index')->with('series', $series)
         ->with('mensagemSucesso', $mensagemSucesso);
 
     }
@@ -39,6 +39,11 @@ class SeriesController extends Controller
 
 
     public function store(SeriesFormRequest $request){
+
+        $coverPath = $request->image("cover")
+        ->store('series_cover', 'public');
+
+        $request->coverPath = $coverPath;
 
         $serie = $this->repository->add($request);
 

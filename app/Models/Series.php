@@ -6,7 +6,7 @@ use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * 
+ *
  *
  * @property int $id
  * @property string $nome
@@ -25,7 +25,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Series extends Model
 {
-    protected $fillable = ["nome"];
+    protected $fillable = ["nome", "cover"];
 
     public function seasons(){
 
