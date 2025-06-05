@@ -3,5 +3,6 @@
 return [
     App\Providers\AppServiceProvider::class,
     App\Providers\EpisodesRepositoryProvider::class,
+    App\Providers\EventServiceProvider::class,
     App\Providers\SeriesRepositoryProvider::class,
 ];

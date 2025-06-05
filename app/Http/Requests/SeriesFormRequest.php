@@ -1,8 +1,15 @@
 <?php
 
+/**
+ * @property int $seasonsQty
+ * @property int $episodesPerSeason
+ * @method array all(array $keys = null)
+ */
+
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+
 
 class SeriesFormRequest extends FormRequest
 {

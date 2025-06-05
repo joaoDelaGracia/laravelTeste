@@ -28,7 +28,7 @@ class SeriesCreated extends Mailable
 
     }
 
-    /**
+    /** 
      * Get the message envelope.
      */
     public function envelope(): Envelope
