@@ -40,7 +40,7 @@ class SeriesController extends Controller
 
     public function store(SeriesFormRequest $request){
 
-        $coverPath = $request->image("cover")
+        $coverPath = $request->file("cover")
         ->store('series_cover', 'public');
 
         $request->coverPath = $coverPath;

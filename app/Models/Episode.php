@@ -5,8 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- *
- *
  * @property int $id
  * @property int $number
  * @property int $season_id
@@ -20,6 +18,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Episode whereSeasonId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Episode whereWatched($value)
  * @mixin \Eloquent
+ * @mixin IdeHelperEpisode
  */
 class Episode extends Model
 {

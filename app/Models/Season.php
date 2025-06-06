@@ -5,8 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * 
- *
  * @property int $id
  * @property int $number
  * @property int $series_id
@@ -24,6 +22,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Season whereSeriesId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Season whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @mixin IdeHelperSeason
  */
 class Season extends Model
 {

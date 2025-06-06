@@ -36,7 +36,7 @@
                             id="cover"
                             name="cover"
                             class="form-control"
-                            accept="image/png, image/jpeg, image/jpg">
+                            accept="image/png, image/jpeg, image/jpg, image/webp">
                 </div>
             </div>
         </div>

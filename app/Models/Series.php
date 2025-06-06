@@ -6,8 +6,6 @@ use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- *
- *
  * @property int $id
  * @property string $nome
  * @property \Illuminate\Support\Carbon|null $created_at
@@ -22,6 +20,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Series whereNome($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Series whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @mixin IdeHelperSeries
  */
 class Series extends Model
 {

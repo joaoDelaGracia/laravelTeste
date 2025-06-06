@@ -2,9 +2,11 @@
 
 /**
  * @property int $seasonsQty
+ * @property string $nome
  * @property int $episodesPerSeason
  * @property string $coverPath
  * @method array all(array $keys = null)
+ * @method string file(string $cover = null)
  */
 
 namespace App\Http\Requests;
